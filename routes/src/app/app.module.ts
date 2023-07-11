@@ -1,20 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+
+//Pages
+import { HomeComponent } from './pages/home/home.component';
+import { PageErrorComponent } from './pages/page-error/page-error.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReactiveFormsComponent,
+    HomeComponent,
+    PageErrorComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
